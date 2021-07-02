@@ -6,16 +6,14 @@
   <slot />
 </a>
 
-<style>
+<style lang="scss">
   a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--primary-color); */
     color: var(--background-color);
-    font-size: 6.4rem;
+    font-size: 4.8rem;
     text-decoration: none;
     font-weight: 500;
-    margin-bottom: 56px;
   }
 </style>

@@ -1,5 +1,6 @@
 <script>
   import LogoBox from '../shared/LogoBox.svelte';
+  import Divider from '../shared/Divider.svelte';
 </script>
 
 <section>
@@ -8,13 +9,13 @@
     I’m <span>Nícolas Dellazzeri</span>,
     a Web Developer and Design enthusiast.
   </h1>
-  <div class="divider"></div>
+  <Divider --type="dashed" --width="62.4rem" --margin-top="2.4rem" />
+  <!-- <div class="divider"></div> -->
   <footer>
     <h3>
       Actually working at <span>amcom</span>
       as a software developer
-    </h3>    <!-- <Logo />
-    <img src={Logo} alt="Nicolas Dellazzeri"> -->
+    </h3>
   </footer>
 </section>
 
@@ -32,11 +33,6 @@
   }
   span {
     color: var(--primary-color);
-  }
-  .divider {
-    border-top: 8px dashed var(--font-color);
-    margin-top: 2.4rem;
-    width: 624px;
   }
   footer {
     display: flex;
