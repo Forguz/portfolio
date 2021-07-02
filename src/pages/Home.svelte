@@ -13,9 +13,7 @@
     <h3>
       Actually working at <span>amcom</span>
       as a software developer
-    </h3>
-    <LogoBox />
-    <!-- <Logo />
+    </h3>    <!-- <Logo />
     <img src={Logo} alt="Nicolas Dellazzeri"> -->
   </footer>
 </section>
@@ -36,9 +34,8 @@
     color: var(--primary-color);
   }
   .divider {
-    height: 8px;
-    background-color: var(--font-color);
-    margin-top: 40px;
+    border-top: 8px dashed var(--font-color);
+    margin-top: 2.4rem;
     width: 624px;
   }
   footer {
@@ -47,7 +44,7 @@
   }
   h3 {
     font-size: 4.8rem;
-    max-width: 511px;
+    max-width: 51.1rem;
     line-height: 104%;
     letter-spacing: -0.025em;
     margin-top: 24px;
