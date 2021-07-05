@@ -1,17 +1,18 @@
 <script>
   import { scale, slide } from 'svelte/transition'
   import { bounceOut } from 'svelte/easing';
-  import Divider from '../shared/Divider.svelte';
-  import NavOption from '../shared/NavOption.svelte';
+  import Divider from '../../shared/Divider.svelte';
+  import NavOption from '../../shared/NavOption.svelte';
+  import MenuOption from './MenuOption.svelte';
 </script>
 
 <section out:scale={{duration: 1500, easing: bounceOut}} in:slide={{duration: 1500, easing: bounceOut}}>
   <div class="menu-content">
     <nav>
-      <a>About</a>
-      <a>Skills</a>
-      <a>Projects</a>
-      <a>Contact</a>
+      <MenuOption>About</MenuOption>
+      <MenuOption>Skills</MenuOption>
+      <MenuOption>Projects</MenuOption>
+      <MenuOption>Contact</MenuOption>
     </nav>
     <Divider 
       --type="solid"
@@ -34,19 +35,6 @@
     background-color: var(--primary-color);
     padding: 48px;
     padding-left: 64px;
-  }
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--background-color);
-    font-size: 4.8rem;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  nav > a + a {
-    margin-top: 4.8rem;
   }
   .menu-content {
     display: flex;

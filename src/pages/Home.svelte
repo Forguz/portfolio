@@ -10,7 +10,6 @@
     a Web Developer and Design enthusiast.
   </h1>
   <Divider --type="dashed" --width="62.4rem" --margin-top="2.4rem" />
-  <!-- <div class="divider"></div> -->
   <footer>
     <h3>
       Actually working at <span>amcom</span>

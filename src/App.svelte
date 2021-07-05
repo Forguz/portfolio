@@ -4,7 +4,7 @@
   import { isMenuVisible } from './stores/menu';
 
   import Main from './components/Main.svelte';
-  import Menu from './components/Menu.svelte';
+  import Menu from './components/Menu/Menu.svelte';
   import Home from './pages/Home.svelte';
 
   function toggleMenu() {
